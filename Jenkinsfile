@@ -4,7 +4,7 @@ pipeline{
         stage('Lint Checks') {
             steps {
                 sh "npm i jslint"   
-                sh "~/node_modules/jslint/bin/jslint.js server.js"
+                sh "/node_modules/jslint/bin/jslint.js server.js"
             }
         } 
         stage('Code Quality Checks') {
