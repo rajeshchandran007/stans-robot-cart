@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage('Lint Checks') {
             steps {
-                sh "npm i jslint"   
+                sh "npm install jslint"   
                 sh "~/node_modules/jslint/bin/jslint.js server.js"
             }
         } 
